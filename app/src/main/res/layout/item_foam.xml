@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:DragToamViews="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:clipChildren="false"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginRight="12dp"
+        android:text="測試測試測試測試測試測試測試測試qwertyuiopasdfghjklzxcvbnm"
+        android:lines="1"
+        android:ellipsize="end"
+        />
+
+    <com.tang.bezierviews.widget.DragFoamView
+        android:id="@+id/foam_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_gravity="center"
+        android:clipChildren="false"
+        DragToamViews:max_dis="72dp">
+
+        <TextView
+            android:id="@id/id_drag_item"
+            android:layout_width="24dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:background="@drawable/solid_r6_blue"
+            android:gravity="center"
+            android:text="90+"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+    </com.tang.bezierviews.widget.DragFoamView>
+
+</LinearLayout>

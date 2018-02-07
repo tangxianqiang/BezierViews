@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tang.bezierviews.MainActivity">
+
+   <com.tang.bezierviews.widget.MyRView
+       android:id="@+id/rv_foam"
+       android:layout_width="match_parent"
+       android:clipChildren="false"
+       android:layout_height="match_parent">
+   </com.tang.bezierviews.widget.MyRView>
+
+</LinearLayout>
