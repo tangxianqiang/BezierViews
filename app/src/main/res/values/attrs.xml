@@ -3,4 +3,8 @@
     <declare-styleable name="DragFoamView">
         <attr name="max_dis" format="dimension"/>
     </declare-styleable>
+    <declare-styleable name="FloatLoveView">
+        <attr name="width" format="dimension"/>
+        <attr name="height" format="dimension"/>
+    </declare-styleable>
 </resources>

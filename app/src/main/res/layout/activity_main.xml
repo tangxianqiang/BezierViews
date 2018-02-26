@@ -6,11 +6,17 @@
     android:orientation="vertical"
     tools:context="com.tang.bezierviews.MainActivity">
 
-   <com.tang.bezierviews.widget.MyRView
-       android:id="@+id/rv_foam"
-       android:layout_width="match_parent"
-       android:clipChildren="false"
-       android:layout_height="match_parent">
-   </com.tang.bezierviews.widget.MyRView>
+   <Button
+       android:id="@+id/btn_foam"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="粘性气泡"
+       />
+   <Button
+       android:id="@+id/btn_love"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="漂浮桃心"
+       />
 
 </LinearLayout>

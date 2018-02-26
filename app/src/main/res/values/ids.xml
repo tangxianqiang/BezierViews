@@ -2,4 +2,5 @@
 <resources>
     <item name="id_drag_item" type="id"/>
     <item name="id_drag_image" type="id"/>
+    <item name="id_love_item" type="id"/>
 </resources>

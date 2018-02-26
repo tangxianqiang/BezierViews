@@ -2,11 +2,13 @@ package com.tang.bezierviews.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.util.ArrayMap;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.tang.bezierviews.R;
 import com.tang.bezierviews.widget.DragFoamView;
@@ -36,18 +38,25 @@ public class FoamAdapter extends RecyclerView.Adapter<FoamAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
-        holder.foamTest.setFoamListener(new DragFoamView.OnFoamActionListener() {
-            @Override
-            public void foamBoom() {
+    public void onBindViewHolder(ViewHolder holder, final int position) {
+        if (!TextUtils.isEmpty(data.get(position))) {
+            holder.foamTest.setVisibility(View.VISIBLE);
+            ((TextView)holder.foamTest.findViewById(R.id.id_drag_item)).setText(data.get(position));
+            holder.foamTest.setFoamListener(new DragFoamView.OnFoamActionListener() {
+                @Override
+                public void foamBoom() {
+                    data.put(position,"");
+                }
 
-            }
+                @Override
+                public void foamBounce() {
 
-            @Override
-            public void foamBounce() {
+                }
+            });
+        }else{
+            holder.foamTest.setVisibility(View.GONE);
+        }
 
-            }
-        });
     }
 
     @Override

@@ -32,7 +32,7 @@
             android:layout_gravity="center"
             android:background="@drawable/solid_r6_blue"
             android:gravity="center"
-            android:text="90+"
+            android:text="99+"
             android:textColor="#fff"
             android:textSize="10sp" />
     </com.tang.bezierviews.widget.DragFoamView>
